@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Nuvo Nutrition</title>
+</head>
+<body>
+
+    <img src="img/Nuvo Nutrition Website Logo.png" alt="Nuvo Logo" class="logo">
+
+    <div class="form-wrapper">
+        <div class="padding">
+            <h1>Healthy alternatives to everyday cravings</h1>
+            <p>Products you probably won't find at your traditional big box stores.</p>
+            <script async data-uid="c33137a9bb" src="https://nuvo-nutrition.ck.page/c33137a9bb/index.js"></script>
+        </div>
+    </div>
+
+    <div class="img-block"></div>
+
+    <style>
+        * { margin: 0; }
+        body { display: flex; flex-direction: row; justify-content: center; align-items: center; position: relative; min-height: 100vh; background-color: rgb(240, 240, 240); font-family: 'Lato', sans-serif; overflow-x: hidden; }
+
+        .logo { position: absolute; top: 15px; left: 50px; height: 60px; width: auto; }
+
+        .form-wrapper { width: 50%; }
+        .padding { margin: 0 auto; width: 85%; }
+        h1 { font-size: 60px; line-height: 70px; }
+        p { margin: 35px 0 50px 0; font-size: 23px; line-height: 34px; }
+
+        .img-block { width: 50%; min-height: 100vh; background-image: url("img/background.jpg"); background-size: cover; }
+
+        @media only screen and (max-width: 980px) {
+            body { flex-direction: column; }
+            .form-wrapper { padding: 180px 0 80px 0; width: 100%; }
+            h1 { font-size: 45px; line-height: 55px; } 
+            p { font-size: 19px; line-height: 29px; }
+            .img-block { width: 100%; min-height: 500px; }
+        }
+    </style>
+
+</body>
+</html>
