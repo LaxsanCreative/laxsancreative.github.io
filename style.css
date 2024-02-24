@@ -1,0 +1,141 @@
+/* --------------------------------------------------- 
+                  General & Typography
+   --------------------------------------------------- */
+*, *::after, *::before { margin: 0; padding: 0; box-sizing: inherit; }
+html { scroll-behavior: smooth; }
+
+body { position: relative; background-color: #F5F5F5; font-family: 'Lato', sans-serif; overflow-x: hidden; }
+
+h1 { font-size: 75px; line-height: 86px; font-weight: 700; color: white; }
+h2, h3, h4, h5, h6 { color: #544741; }
+h2 { margin-bottom: 25px; font-size: 50px; line-height: 62px; font-weight: 700; }
+h3 { font-size: 36px; line-height: 45px; font-weight: 700; }
+h4 { font-size: 23px; line-height: 34px; font-weight: 400; }
+h5 { font-size: 19px; line-height: 27px; font-weight: 300; }
+h6 { color: rgb(100, 100, 100); font-size: 14px; line-height: 19px; font-weight: 400; }
+p { font-size: 1.35rem; line-height: 1.8rem; }
+
+.subheading { margin-bottom: 60px; width: 55%; text-align: center; }
+
+a { color: rgb(255, 255, 255); text-decoration: none; } li { list-style: none; }
+
+.shadow-block { background-color: #544741; border-radius: 15px; box-shadow: 16px 16px 0px rgba(28, 31, 38, 0.5); }
+
+@media only screen and (max-width: 980px) {
+    h1 { font-size: 45px; line-height: 55px; }
+    h2 { width: 95%; font-size: 39px; line-height: 49px; }
+    .subheading { width: 95%; }
+    p { font-size: 17px; line-height: 28px; }
+}
+
+/* --------------------------------------------------- 
+                    Layouts
+    --------------------------------------------------- */
+.section-container { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; margin: 0 auto; width: 90%; max-width: 1500px; }
+
+.content-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; max-width: 1500px; }
+
+.content-block { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+
+@media only screen and (max-width: 980px) {
+    .section-container { width: 95%; }
+
+    .content-wrapper { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .content-wrapper-one { display: flex; flex-direction: column-reverse; justify-content: center; align-items: center; }
+}
+
+/* --------------------------------------------------- 
+                    Buttons
+    --------------------------------------------------- */
+.btn { padding: 16px 25px; color: #544741; font-size: 20px; font-weight: 400; text-align: center; border-radius: 5px; transition: all .3s; }
+
+.brown-btn { color: #ffffff; background-color: #544741; border: 2px solid #544741; }
+.brown-btn:hover { color: #544741; background-color: #ffffff; border: 2px solid #ffffff; }
+
+.orange-btn { color: #000000; background-color: #F7921F; border: 2px solid #F7921F; }
+.orange-btn:hover { color: #544741; background-color: #ffffff; border: 2px solid #ffffff; }
+
+@media only screen and (max-width: 980px) {
+    .btn { padding: 12px 0; width: 95%; }
+}
+
+
+/* --------------------------------------------------- 
+                   Landing Page
+    --------------------------------------------------- */
+
+.navigation { position: fixed; top: 0; left: 0; padding: 5px 0; width: 100%; background-color: #F5F5F5; }
+.desktop-navigation { width: 100%; max-width: 1800px; }
+.header-logo { height: 85px; width: auto; }
+
+@media only screen and (max-width: 980px) {
+    .navigation { position:static; }
+    .header-logo { margin: 10px 0 25px 0; }
+}
+
+
+.header { margin-top: 140px; padding: 120px 0; background-color: #544741; border-radius: 40px; box-shadow: 0 5px 20px rgb(200, 200, 200); }
+.hero-block { align-items: flex-start; width: 60%; }
+.hero-block h4 { margin: 30px 0 40px 0; color: white; }
+
+@media only screen and (max-width: 980px) {
+    .header { margin-top: 70px; }
+    .header .section-container { width: 85%; }
+    .hero-block { width: 100%; }
+}
+
+
+.product-categories { justify-content: center; padding: 100px 0; max-width: 1800px; }
+.category { font-size: 40px; text-align: center; }
+.bullet-point { margin: 0 23px; font-size: 37px; }
+
+@media only screen and (max-width: 980px) {
+    .category { font-size: 37px; }
+    .bullet-point { margin: 15px 0; }
+}
+
+
+.intro-container { padding: 100px 0; }
+.intro-img-wrapper { width: 35%; }
+.intro-img { border-radius: 20px; box-shadow: 0 5px 20px rgb(190, 190, 190); }
+.intro-img:first-child { width: 50%; height: auto; }
+.intro-img-wrapper-right { width: 47%; }
+.intro-img-wrapper-right .intro-img { margin: 12px 0; width: 100%; height: auto; }
+.intro-block { width: 52%; }
+.intro-block p { margin: 10px 0 45px 0; }
+
+@media only screen and (max-width: 980px) {
+    .intro-img-wrapper { margin-top: 60px; width: 100%; }
+    .intro-img-wrapper-right { flex-direction: row; justify-content: space-between; margin-top: 20px; width: 95%; }
+    .intro-img-wrapper-right .intro-img { width: 45%; }
+    .intro-block { width: 90%; }
+}
+
+
+.benefits-container { margin: 70px auto; padding: 100px 0; background-color: #544741; border-radius: 40px; box-shadow: 0 5px 20px rgb(200, 200, 200); }
+.benefits-container h2 { margin: 0; width: 50%; color: white; }
+.benefits-top-wrapper { width: 45%; }
+.benefit-wrapper { justify-content: start; flex-wrap: nowrap; margin: 15px 0; width: 48%; }
+.benefit-checkmark { margin-right: 15px; height: 30px; width: 30px; }
+.benefit-wrapper p { color: white; }
+
+@media only screen and (max-width: 980px) {
+    .benefits-container .section-container { width: 85%; }
+    .benefits-container h2 { margin-bottom: 30px; width: 100%; }
+    .benefits-top-wrapper { width: 100%; }
+    .benefit-wrapper { flex-direction: row; width: 100%; } 
+}
+
+
+.subscribe-container { padding: 100px 0; }
+.subscribe-container .content-block { align-items: center; width: 100%; }
+.subscribe-container h2 { text-align: center; }
+.subscribe-container p { width: 50%; text-align: center; }
+.formkit-form[data-uid="c33137a9bb"] { margin-top: 40px; width: 400px !important; max-width: 1000px !important; }
+
+@media only screen and (max-width: 980px) {
+    .subscribe-container .content-block { margin: 0 auto; width: 95%; }
+    .subscribe-container p { width: 100%; }
+    .formkit-form[data-uid="c33137a9bb"] { width: 100% !important; }
+}  
+
