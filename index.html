@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,39 +14,89 @@
 </head>
 <body>
 
-    <img src="images/Nuvo Nutrition Website Logo.png" alt="Nuvo Logo" class="logo">
-
-    <div class="form-wrapper">
-        <div class="padding">
-            <h1>Healthy alternatives to everyday cravings</h1>
-            <p>Products you probably won't find at your traditional big box stores.</p>
-            <script async data-uid="c33137a9bb" src="https://nuvo-nutrition.ck.page/c33137a9bb/index.js"></script>
+    <div class="content-block navigation">
+        <div class="section-container">
+            <div class="content-wrapper desktop-navigation">
+                <a href="#"><img src="img/nuvo-house-website-logo.png" alt="Logo" class="header-logo"></a>
+                <a href="#early-access" class="btn brown-btn header-btn">Get Early Access</a>
+            </div>
         </div>
     </div>
 
-    <div class="img-block"></div>
+    <div class="section-container header">
+        <div class="section-container">
+            <div class="content-block hero-block">
+                <h1>Healthy alternatives for everyday cravings.</h1>
+                <h4>Products you probably won't find at your traditional big box stores.</h4>
+                <a href="#early-access" class="btn orange-btn">Get Early Access</a>
+            </div>
+        </div>
+    </div>
 
-    <style>
-        * { margin: 0; }
-        body { display: flex; flex-direction: row; justify-content: center; align-items: center; position: relative; min-height: 100vh; background-color: rgb(240, 240, 240); font-family: 'Lato', sans-serif; overflow-x: hidden; }
+    <div class="content-wrapper product-categories">
+        <p class="category">PROTEIN BARS</p>
+        <span class="bullet-point">&bull;</span>
+        <p class="category">GRANOLA & CEREALS</p>
+        <span class="bullet-point">&bull;</span>
+        <p class="category">SUPERFOOD MIXES</p>
+        <span class="bullet-point">&bull;</span>
+        <p class="category">COFFEE & TEAS</p>
+    </div>
 
-        .logo { position: absolute; top: 15px; left: 50px; height: 60px; width: auto; }
+    <div class="section-container intro-container">
+        <div class="content-wrapper content-wrapper-one">
+            <div class="content-wrapper intro-img-wrapper">
+                <img src="img/intro-one.jpg" alt="" class="intro-img">
+                <div class="content-block intro-img-wrapper-right">
+                    <img src="img/intro-two.jpeg" alt="" class="intro-img">
+                    <img src="img/intro-three.webp" alt="" class="intro-img">
+                </div>
+            </div>
+            <div class="content-block intro-block">
+                <h2>A carefully curated collection of health & wellness essentials.</h2>
+                <p>
+                    NuvoHouse is a health and wellness store with a mission to make healthier living more accessible. Here, you'll only find products that do not contain any harmful additives, and are GMO-free.
+                </p>
+                <a href="#early-access" class="btn brown-btn">Get Early Access</a>
+            </div>
+        </div>
+    </div>
 
-        .form-wrapper { width: 50%; }
-        .padding { margin: 0 auto; width: 85%; }
-        h1 { font-size: 60px; line-height: 70px; }
-        p { margin: 35px 0 50px 0; font-size: 23px; line-height: 34px; }
+    <div class="section-container benefits-container">
+        <div class="section-container">
+            <div class="content-wrapper">
+                <h2>We’re different from your traditional big box stores.</h2>
+                <div class="content-wrapper benefits-top-wrapper">
+                    <div class="content-wrapper benefit-wrapper">
+                        <img src="img/benefit-checkmark.png" alt="Checkmark" class="benefit-checkmark">
+                        <p>100% GMO-Free</p>
+                    </div>
+                    <div class="content-wrapper benefit-wrapper">
+                        <img src="img/benefit-checkmark.png" alt="Checkmark" class="benefit-checkmark">
+                        <p>No artificial flavors, food dyes, or harmful additives</p>
+                    </div>
+                    <div class="content-wrapper benefit-wrapper">
+                        <img src="img/benefit-checkmark.png" alt="Checkmark" class="benefit-checkmark">
+                        <p>Sustainably sourced</p>
+                    </div>
+                    <div class="content-wrapper benefit-wrapper">
+                        <img src="img/benefit-checkmark.png" alt="Checkmark" class="benefit-checkmark">
+                        <p>Fit for most popular dietary plans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        .img-block { width: 50%; min-height: 100vh; background-image: url("images/background.jpg"); background-size: cover; }
-
-        @media only screen and (max-width: 980px) {
-            body { flex-direction: column; }
-            .form-wrapper { padding: 180px 0 80px 0; width: 100%; }
-            h1 { font-size: 45px; line-height: 55px; } 
-            p { font-size: 19px; line-height: 29px; }
-            .img-block { width: 100%; min-height: 500px; }
-        }
-    </style>
+    <div class="section-container subscribe-container" id="early-access">
+        <div class="content-block">
+            <h2>We're getting ready to launch!</h2>
+            <p>
+                Enter your email below, to be notified of when we are ready to launch. You'll be the first to receive special offers and discounts as well.
+            </p>
+            <script async data-uid="c33137a9bb" src="https://nuvo-nutrition.ck.page/c33137a9bb/index.js"></script>
+        </div>
+    </div>
 
 </body>
 </html>
